@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, {useState} from "react";
+
+import data from "./data/countries_data";
 import './App.css';
+import List from "./List";
 
 function App() {
+const [countries, setCountries] = useState(data)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Countries</h1>
+        <List countries={countries}/>
+
+        {console.log(countries[0])}
+
+      </div>
     </div>
   );
 }
