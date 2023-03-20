@@ -62,8 +62,8 @@ const List = ({ countries }) => {
                 className="flag"
                 style={{
                   backgroundImage: `url(${selectedCountry.flag})`,
-                  width: "100px",
-                  height: "70px",
+                  //   width: "100px",
+                  //   height: "70px",
                 }}
               ></div>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
