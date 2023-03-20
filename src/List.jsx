@@ -72,6 +72,9 @@ const List = ({ countries }) => {
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                 Capital: {selectedCountry.capital}
               </Typography>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                Language: {selectedCountry.languages}
+              </Typography>
             </>
           )}
         </Box>
