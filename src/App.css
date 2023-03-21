@@ -50,6 +50,12 @@
   height: 100%;
 }
 
+@media (max-width: 479px) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr); /* 1 sütun */
+  }
+}
+
 /* Ekran boyutu 768 pikselden küçük olanlar için stil ayarları */
 @media (max-width: 767px) {
   .countries {
