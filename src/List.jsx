@@ -51,7 +51,7 @@ const List = ({ countries }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={{ ...style, backgroundColor: " #F8BBD0", color: "#000000" }}>
           {selectedCountry && (
             <>
               <Typography id="modal-modal-title" variant="h6" component="h2">
