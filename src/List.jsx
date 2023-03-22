@@ -70,11 +70,9 @@ const List = ({ countries }) => {
                 {selectedCountry.name}
               </Typography>
               <div
-                className="flag"
+                className="modal-flag"
                 style={{
                   backgroundImage: `url(${selectedCountry.flag})`,
-                  //   width: "100px",
-                  //   height: "70px",
                 }}
               ></div>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
@@ -84,7 +82,7 @@ const List = ({ countries }) => {
                 Capital: {selectedCountry.capital}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                Language: {selectedCountry.languages}
+                Language: {selectedCountry.languages.join(", ")}
               </Typography>
             </>
           )}

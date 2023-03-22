@@ -7,7 +7,12 @@ const Search = ({ onSearch }) => {
 
   return (
     <div className="search">
-      <input type="text" placeholder="Search..." onChange={handleSearch} />
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={handleSearch}
+        className="search-input"
+      />
     </div>
   );
 };
