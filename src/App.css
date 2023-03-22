@@ -1,17 +1,6 @@
 .App {
   text-align: center;
 }
-.h1 {
-  text-align: center;
-}
-
-.h1 span {
-  display: block;
-  color: #f8bbd0;
-  font-size: 48px;
-  margin-top: 0;
-}
-
 .countries {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -83,5 +72,3 @@
     grid-template-columns: repeat(5, 1fr); /* 5 sütun */
   }
 }
-
-/* ***************************************************************** */

@@ -11,7 +11,7 @@ const [countries, setCountries] = useState(data)
   return (
     <div className="App">
       <div className="container">
-         <h1 className="h1"> <span>Countries</span> </h1>
+         <h1>Countries</h1>
         <List countries={countries}/>
 
       </div>
