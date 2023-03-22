@@ -51,7 +51,19 @@ const List = ({ countries }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{ ...style, backgroundColor: " #F8BBD0", color: "#000000" }}>
+        <Box
+          sx={{
+            ...style,
+            backgroundColor: " #F8BBD0",
+            color: "#000000",
+            "&.modal-content": {
+              "@media (max-width: 480px)": {
+                width: "80% !important",
+              },
+            },
+          }}
+          className="modal-content"
+        >
           {selectedCountry && (
             <>
               <Typography id="modal-modal-title" variant="h6" component="h2">

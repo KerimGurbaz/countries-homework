@@ -72,3 +72,41 @@
     grid-template-columns: repeat(5, 1fr); /* 5 sütun */
   }
 }
+
+/* ... diğer stiller ... */
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive stiller */
+@media (max-width: 768px) {
+  .search-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* ... diğer stiller ... */
+
+/* Modal için responsive stiller */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 80% !important;
+  }
+}
